@@ -1,0 +1,17 @@
+{
+  "name": "NodeJsApps",
+  "version": "0.1.0",
+  "description": "Node.js apps demos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Tomislav Capan",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {}
+}
