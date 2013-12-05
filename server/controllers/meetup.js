@@ -15,8 +15,9 @@ function index(req, res) {
 
 function create(req, res) {
   var data = req.body;
-  meetups.push(data); // IRL: add to DB, here just add to array
-  res.send(204);      // confirm action by sending 204
+  meetups.push(data);   // IRL: add to DB, here just add to array
+  res.send(204);        // confirm action by sending 204
+                        // IRL: send the given DB ID back to the client: res.send({ id: storedEntity.id });
 }
 
 
@@ -32,6 +33,7 @@ function update(req, res) {
     , data = req.body
     , meetup = _.find(meetups, { id: id });
   meetup = _.extend(meetup, data);
+  // IRL: Store changed entity back to DB
   res.send(204);
 }
 
